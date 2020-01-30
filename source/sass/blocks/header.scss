@@ -1,11 +1,23 @@
 .header {
-  background: url('../../img/desktop.jpg');
+  background: url('../../img/desktop.jpg') no-repeat;
   min-height: 630px;
   background-size: cover;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    background: url("../../img/tablet.jpg") no-repeat;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    background: url("../../img/mobile.jpg") no-repeat;
+  }
 }
 
 .header__top {
@@ -124,27 +136,22 @@
   .header__title {
     font-size: 35px;
   }
+
+  .header__logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .header__top {
+    background: #ffffff;
+  }
 }
 
-
-// @media (max-width: 1000px) {
-//   .header--main-title {
-//     background: url("../../img/Power_lines_tablet@1x.jpg") no-repeat right bottom;
-//     background-size: auto 630px;
-
-//     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-//       background: url("../../img/Power_lines_tablet@2x.jpg") no-repeat right bottom;
-//       background-size: auto 630px;
-//     }
-//   }
-// }
-
-
-
-
-
-
-
+@media (max-width: 400px) {
+  .header__title {
+    font-size: 25px;
+  }
+}
 
 //мобильная кнопка меню
 

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="js/menu.min.js" as="script" crossorigin="anonymous">
-    <!-- <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link rel="apple-touch-icon" href="img/favicon-apple.png"/> -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon-apple.png"/>
     <meta name="format-detection" content="telephone=no">
   </head>
   <body>
@@ -23,7 +23,7 @@
           <a>
             <picture>
               <!-- <source media="(max-width: 980px)" srcset="img/small-logo.svg" > -->
-              <!-- <img class="header__logo" src="img/big-logo.svg" width="24" height="75" alt="МДмед"> -->
+              <img class="header__logo" src="img/logo-desktop.png" width="220" height="72" alt="МДмед">
             </picture>
           </a>
           <ul class="header__menu-list menu-close no-js">
@@ -39,17 +39,77 @@
                   </div>
               </label>
             </div>
-            <li><a class="header__menu-link">Главная</a></li>
-            <li><a class="header__menu-link" href="#about-us">О нас</a></li>
-            <li><a class="header__menu-link" href="#partners">Каталог</a></li>
+            <li><a class="header__menu-link header__menu-link--active">Главная</a></li>
+            <li><a class="header__menu-link" href="#catalog">Каталог</a></li>
+            <li><a class="header__menu-link" href="#about_us">О нас</a></li>
             <li><a class="header__menu-link" href="#contact">Контакты</a></li>
           </ul>
         </div>
       </div>
-      <h1 class="header__title center">Высокотехнологичная продукция для молекулярной диагностики</h1>
+      <h1 class="header__title center">Высокотехнологичная<br>продукция<br>для молекулярной<br>диагностики</h1>
+      <a hidden href="http://www.freepik.com">Designed by vilmosvarga / Freepik</a>
     </header>
 
     <main class="main">
+      <div class="catalog center" id="catalog">
+          <h1 class="main__title main__title--catalog">Каталог</h1>
+          <div class="catalog__item">
+            <div class="catalog__image">
+                <img src="img/logo_ru.jpg">
+            </div>
+            <h4 class="catalog__title">АмплиСенс</h4>
+            <p class="catalog__description">Один из ведущих российских производителей реагентов для ПЦР-диагностики широкого спектра социально значимых инфекционных заболеваний.</p>
+            <a class="catalog__button" href="catalogs/amplisens.pdf">Каталог</a>
+          </div>
+          <div class="catalog__item">
+            <div class="catalog__image catalog__image--qiagen">
+              <img src="img/brand-logo-4.png">
+            </div>
+            <h4 class="catalog__title">QIAGEN</h4>
+            <p class="catalog__description">Широкий спектр наборов реагентов для проведения генетических исследований методом пиросеквинирования, секвенирования нового поколения (NGS) и ПЦР в реальном времени (Real-time PCR).</p>
+            <a class="catalog__button" href="catalogs/qiagen.pdf">Каталог</a>
+          </div>
+          <div class="catalog__item">
+            <div class="catalog__image">
+                <img src="img/PCR4.jpg">
+            </div>
+            <h4 class="catalog__title">Расходные материалы</h4>
+            <p class="catalog__description">Расходные материалы для лабораторий от ведущих производителей.</p>
+            <a class="catalog__button" href="catalogs/axygen.pdf">Каталог</a>
+          </div>
+      </div>
+
+      <div class="about_us" id="about_us">
+        <div class="center">
+          <h1 class="main__title">О нас</h1>
+          <p class="about_us__text">Компания &quot;МДмед&quot; является дистрибьютором продукции для клинической ПЦР-диагностики на территории Беларуси.</p>
+          <p class="about_us__text">В настоящее время клиентами компании являются государственные предприятия, медицинские диагностические лаборатории, центры гигиены и эпидемиологии, ветеринарные лаборатории, клинико-диагностические лаборатории.</p>
+          <p class="about_us__text">Компания ведет постоянную работу по расширению актуальной и востребованной рынком номенклатуры предлагаемых товаров.</p>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <div class="center contact__wrapper">
+            <h1 class="main__title">Контакты</h1>
+        </div>
+        <div class="contact__map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A91546bd09c513e56ee11ad16f3ba43bf45cd1e81035a1d520acfcec2cdbe5bb3&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="center">
+          <div class="contact__item">
+            <h4 class="contact__title">Офис</h4>
+            <p class="contact__text">г. Минск, ул. Гинтовта 1, каб. 505 (5 этаж) 220125</p>
+            <p>пн.-пт. с 9.00 - 18.00, обед 13.00-14.00, выходные: сб. вс.</p>
+          </div>
+          <div class="contact__item">
+            <h4 class="contact__title">Склад</h4>
+            <p class="contact__text">г. Минск, ул. Ложинская 4, пом. 55</p>
+          </div>
+          <p class="contact__item contact__item--phones contact__text">Телефоны: + 375 17 397-91-94, +375 29 227-91-17, +375 29 284-36-91 (бухгалтерия)<br>
+              Факс: + 375 17 399-80-82<br><br><br>
+              info@mdmed.by</p>
+        </div>
+      </div>
 
 
     </main>
@@ -57,32 +117,23 @@
 
       <footer class="footer">
         <div class="center">
+          <p class="footer__copyright">&copy; ООО &quot;МДмед&quot;<br>УНП 192810735</p>
           <div class="footer__content">
-            <svg width="25" height="35" focusable="false" arial-hidden="true" ><use xlink:href="#placeholder"></svg>
-            <p class="footer__contact">Республика Беларусь, 220124,<br>г.&nbsp;Минск, ул.&nbsp;Лынькова,&nbsp;37 корпус&nbsp;2</p>
+            <div class="footer__contact">
+              <svg width="25" height="35" focusable="false" arial-hidden="true" ><use xlink:href="#email"></svg>
+              <p>info@mdmed.by</p>
+            </div>
+            <div class="footer__contact">
+              <svg width="25" height="35" focusable="false" arial-hidden="true" ><use xlink:href="#telephone"></svg>
+              <p>+375&nbsp;(17)&nbsp;397-91-94<br>+375&nbsp;(29)&nbsp;227-91-17</p>
+            </div>
           </div>
-          <div class="footer__content">
-            <svg width="25" height="35" focusable="false" arial-hidden="true" ><use xlink:href="#email"></svg>
-            <p class="footer__contact">info@pess.by</p>
-          </div>
-          <div class="footer__content">
-            <svg width="25" height="35" focusable="false" arial-hidden="true" ><use xlink:href="#telephone"></svg>
-            <p class="footer__contact">+375&nbsp;(17)&nbsp;343-75-76</p>
-          </div>
-          <div class="footer__content">
-            <svg width="25" height="35" focusable="false" arial-hidden="true" ><use xlink:href="#time"></svg>
-            <p class="footer__contact">Режим работы: с 8.00 до 17.00 (обеденный перерыв с&nbsp;12.00 до&nbsp;13.00)</p>
-          </div>
-          <p class="footer__copyright">&copy; ООО &quot;ПРОМЭЛЕКТРОСЕРВИССТРОЙ&quot;</p>
+
         </div>
       </footer>
     </main>
 
     <script src="js/menu.min.js"></script>
     <script src="js/scroll.min.js"></script>
-    <script src="js/animation.min.js"></script>
-    <script src="js/form-validation.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-    <script src="js/send.min.js"></script>
   </body>
 </html>

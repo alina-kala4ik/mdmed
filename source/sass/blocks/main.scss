@@ -1,13 +1,11 @@
 .main__title {
-  font-family: 'Oswald', sans-serif;
-  font-size: 38px;
-  font-weight: 400;
+  font-size: 55px;
+  font-weight: normal;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 40px;
-}
+  color: #8B0000;
 
-.main--staff {
-  padding-top: 40px;
-  padding-bottom: 55px;
+  &--catalog {
+    width: 100%;
+    text-align: center;
+  }
 }

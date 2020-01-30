@@ -1,0 +1,36 @@
+.contact .main__title {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.contact__map {
+  height: 400px;
+}
+
+.contact .center {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact__item {
+  flex-shrink: 0;
+  flex-grow: 1;
+  flex-basis: 40%;
+
+  &--phones {
+    width: 100%;
+  }
+}
+
+.contact__title {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.contact__text {
+  font-size: 17px;
+  color: #3B3A3A;
+  margin-bottom: 30px;
+}
